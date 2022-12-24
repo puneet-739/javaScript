@@ -1,0 +1,12 @@
+body {
+    background-color: white;
+}
+
+.container {
+    background-color: aquamarine;
+}
+
+.darkMode {
+    background-color: black;
+    color: white;
+}

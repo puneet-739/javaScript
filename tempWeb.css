@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    background-color: cyan;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+.joke {
+    margin-left: 100px;
+   
+}

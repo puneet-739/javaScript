@@ -1,0 +1,14 @@
+.container {
+    height: 80;
+    width: 200;
+    margin: auto;
+    background-color: green;
+    text-align: center;
+    padding-top: 50;
+}
+
+.center {
+    display: inline;
+    margin: 261;
+}
+

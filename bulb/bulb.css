@@ -1,0 +1,25 @@
+.bulbTop {
+    background-color: rgb(206, 201, 201);
+    height: 200;
+    width: 200;
+    border-radius:100px ;
+}
+
+.bulbOn {
+    background-color: yellow;
+}
+
+.bulbBottom {
+    background-color: black;
+    height: 150;
+    width: 70;
+}
+
+.btn {
+    padding: 5px;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
