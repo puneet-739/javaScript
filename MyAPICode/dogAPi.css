@@ -1,0 +1,29 @@
+#container {
+    background-color: green;
+    padding: 30px;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#fact {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+    font-size: smaller;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#button {
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aqua;
+    font-size: 15px;
+    color: black;
+}
+
+#button:hover {
+    background-color: aquamarine;
+    color: green;
+}
