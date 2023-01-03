@@ -1,5 +1,19 @@
-td {
-    display: inline-block;
+td, th {
+    /* display: inline-block; */
     width: 500;
-    background-color: red;
+    padding: 20px;
+    color: #000;
+    background-color: rgb(224, 214, 214);
+}
+
+.container {
+    padding: 5px;
+    color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: rgb(70, 80, 80);
+}
+
+#noteContainer {
+    padding: 20px;
 }

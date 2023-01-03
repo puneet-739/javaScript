@@ -9,19 +9,26 @@
 </head>
 <body>
     <div class="container">Welcome to my Note App.
-        <div id="weather">Bit Coin</div>
+        <div id="title">Bit Coin</div>
         <table>
-            <tbody>
-                <th>
-                    <td>code</td>
-                    <td>symbol</td>
-                    <td>rate</td>
-                    <td>description</td>
-                    <td>rate float</td>
-                </th>
-                
+            <tbody id="tableBody">
+                <tr>
+                    <th>code</th>
+                    <th>symbol</th>
+                    <th>rate</th>
+                    <th>description</th>
+                    <th>rate float</th>
+                </tr>
             </tbody>
         </table>
+    </div>
+
+    <div id="noteContainer">
+        <input type="text">
+        <button id="addBtn">Add</button>
+        <div id="addNoteContainer">
+            
+        </div>
     </div>
 </body>
 <script src="myNoteApp.js"></script>
