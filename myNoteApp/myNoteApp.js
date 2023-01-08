@@ -32,13 +32,32 @@ let addRow = (res, bpi) => {
 
 }
 
-// let addBtn = document.getElementById('addBtn');
-// addBtn.addEventListener('click', );
-let addNote = (str) => {
+
+let addNote = (textTitle, textNote) => {
     let noteContainer = document.getElementById('addNoteContainer');
     let note = document.createElement('p');
-    note.innerHTML = str;
-    localStorage.setItem('note', str);
+    note.innerHTML = `<p> ${textTitle} :${textNote}</p>`;
+    localStorage.setItem(textTitle, textNote);
     noteContainer.appendChild(note);
 }
 fetchData();
+let fetchNote = () => {
+    if(localStorage.length>0) {
+        for(let i=0; i<localStorage.length; i++) {
+            addNote(localStorage.key(i), localStorage.getItem(localStorage.key(i)))
+        }
+    }
+}
+fetchNote();
+let storeText = () => {
+    let textTitle = document.getElementById('inputTextTitle').value;
+    let textNote = document.getElementById('inputTextNote').value;
+    addNote(textTitle, textNote);    
+}
+let clearLocalStorage = () => {
+    localStorage.clear();
+}
+let addBtn = document.getElementById('addBtn');
+let rmvBtn = document.getElementById('rmvBtn');
+addBtn.addEventListener('click', storeText);
+rmvBtn.addEventListener('click', clearLocalStorage);
