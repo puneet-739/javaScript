@@ -25,6 +25,7 @@ class HelloWorld {
     constructor(value) {
         console.log(`this is a constructor with value ${value}`);
     }
+
     HelloWorld() {
         console.log("this is something weird.?");
     }
@@ -45,6 +46,10 @@ class World extends HelloWorld {
     constructor(value) {
         super(value)
         console.log("this is world's constructor.");
+    }
+
+    static myStaticMethod(value) {
+        console.log(`this is a static method example. with value ${value}`)
     }
     worldDetails(){
         console.log('this is the world!!!');
@@ -68,3 +73,28 @@ myWorld = new World(10);
 myWorld.worldDetails();
 myWorld.value('earth', 3);
 myWorld.hide();
+World.myStaticMethod();
+
+
+class Color {
+    constructor(color) {
+        this._color = color;
+    }
+
+    get color() {
+        return this._color;
+    }
+
+    set color(c) {
+        this._color = c;
+    }
+}
+
+let myColor = new Color('red');
+console.log(myColor.color);
+console.log(myColor._color);
+myColor.color = 'Green';
+console.log(myColor.color);
+
+console.log(myColor instanceof Color);
+
