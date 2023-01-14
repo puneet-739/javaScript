@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    padding: 100px;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.center2 {
+    margin: auto;
+    text-align: center;
+}
+
+.alarm {
+    display: block;
+    height: 40px;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#stopBtn {
+    display: none;
+}
