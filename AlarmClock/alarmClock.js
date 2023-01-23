@@ -53,6 +53,7 @@ stopBtn.addEventListener('click', () => {
     alarmTime = '';
     alert('alarm has been stopped.');
     stopBtn.style.display = 'none';
+    
 });
 
 
