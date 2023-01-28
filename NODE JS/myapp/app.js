@@ -1,3 +1,4 @@
+const { Router } = require('express');
 const express = require('express')
 const app = express()
 const port = 3000
@@ -13,6 +14,8 @@ const port = 3000
   /wednesday
   /login
   /currentT
+  /userId
+  /error
 
 */
 
@@ -82,6 +85,25 @@ app.get('/login', myLogger);
 
 // CURRENT TIME
 app.get('/currentT', currentTime);
+
+// USERID
+app.get('/userId/:id', (req, res, next) => {
+  if(req.params.id == 0) {
+    next('route') 
+  }
+    else {
+      res.send(`id is ${req.params.id}`);
+    }
+})
+
+// USERID
+app.get('/userId/:id', (req, res) => {
+  res.send("what an IDea sirJi");
+})
+
+app.get('/error', (req, res) => {
+  throw new Error("Error has occured. 'Something went wrong'");
+});
 
 
 app.listen(port, () => {
